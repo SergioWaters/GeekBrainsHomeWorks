@@ -4,7 +4,7 @@
 }
 
 body{
-  font-family: 'lato';
+  font-family: lato;
 }
 .container {
   max-width: 1140px;
@@ -19,6 +19,20 @@ body{
 .navbar_btn{
   background-color: #222;
   border: none;
+}
+.navbar__rightside__menu__burger{
+  border: 3px solid #E8E8E8;
+  height: 23px;
+  width: 34px;
+  border-right: none;
+  border-left: none;
+}
+.navbar__rightside__menu__burger span{
+  background-color: #E8E8E8;
+  height: 3px;
+  width: 100%;
+  display: block;
+  margin-top: 10px;
 }
 .navbar__bg{
   width: 100%;
@@ -76,6 +90,7 @@ body{
 .header__inner__right{
   display: flex;
   align-items: center;
+  text-transform: uppercase;
 }
 .header__inner__rectangle{
   Width: 12px;
@@ -84,16 +99,12 @@ body{
   margin: 0 16px 0 63px;
 }
 .header__inner__title {
-  text-transform: uppercase;
-  font-family: lato;
   font-weight: 900;
   font-size: 48px;
   line-height: 58px;
   color: #222;
 }
 .header__inner__subtitle {
-  text-transform: uppercase;
-  font-family: lato;
   font-weight: 700;
   font-size: 37px;
   line-height: 45px;
@@ -101,8 +112,6 @@ body{
 }
 .header__inner__subtitle__red {
   color: #F16D7F;
-  text-transform: uppercase;
-  font-family: lato;
   font-weight: 700;
   font-size: 37px;
   line-height: 45px;
@@ -118,21 +127,18 @@ body{
   justify-content: space-between;
 }
 .categories__box__item {
-
 }
 .categories__item {
 }
 .categories__item__text {
   position: relative;
   top: -160px;
-  text-align: center;
-  
+  text-align: center;  
 }
 .categories__item__text__bottom{
   position: relative;
   top: -120px;
   text-align: center;
-
 }
 .categories__item__promo {
   text-transform: uppercase;
@@ -172,10 +178,28 @@ body{
   align-content: space-between;
   min-height: 1192px;
 }
+.featured__item:hover .featured__item__img{
+  filter: brightness(33%);
+  transition: .5s;
+}
 .featured__item {
   background-color: #f8f8f8;
   text-align: left;
-  width: 360px;  
+  width: 360px;
+  position: relative;
+}
+.featured__item__hover__btn {  
+  position: absolute;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+  height: 43px;
+  width: 138px;
+  background: none;
+  border: 1px solid #fff;
+  color: #fff;
+  top: 200px;
+  left: 32%;
 }
 .fetured__button {
   border: 1px solid #fF6a6a;
@@ -188,6 +212,7 @@ body{
   margin: 50px 0 95px 0;
 }
 .featured__item__img {
+  display: block;
 }
 .featured__item__text {
   margin: 25px 28px 20px 16px;
@@ -323,4 +348,5 @@ body{
   align-items: center;
 }
 .footer__lower__socials__item {
+  
 }
